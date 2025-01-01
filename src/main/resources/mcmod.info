@@ -1,0 +1,16 @@
+[
+{
+  "modid": "clientspoofer",
+  "name": "Client Spoofer Mod",
+  "description": "Spoof your Client Brand",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Vxrtrauter"],
+  "credits": "CCBlueX for the idea"
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
