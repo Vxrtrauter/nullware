@@ -1,4 +1,7 @@
-package com.Vxrtrauter.nullware.command;
+package com.Vxrtrauter.nullware.command.commands;
+
+import com.Vxrtrauter.nullware.command.Command;
+import com.Vxrtrauter.nullware.command.CommandManager;
 
 public class HelpCommand implements Command {
 

@@ -1,7 +1,12 @@
-package com.Vxrtrauter.nullware.command;
+package com.Vxrtrauter.nullware.command.commands;
 
+import com.Vxrtrauter.nullware.command.Command;
 import net.minecraft.client.Minecraft;
+import net.minecraft.util.ChatComponentText;
 
+import static com.Vxrtrauter.nullware.client.MessageHandler.sendMessage;
+
+// add functions to gather specific information from server e.g. plugins using different methods
 public class ServerCommand implements Command {
 
     @Override
@@ -19,6 +24,6 @@ public class ServerCommand implements Command {
         String server = Minecraft.getMinecraft().getCurrentServerData() != null
                 ? Minecraft.getMinecraft().getCurrentServerData().serverIP
                 : "Singleplayer";
-        System.out.println("Current server: " + server);
+        sendMessage("Current server: " + server);
     }
 }

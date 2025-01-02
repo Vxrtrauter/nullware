@@ -3,9 +3,14 @@ package com.Vxrtrauter.nullware.command;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.Vxrtrauter.nullware.client.MessageHandler.sendMessage;
+
 public class CommandManager {
+
+
     private static final Map<String, Command> commands = new HashMap<>();
     private static final String PREFIX = ".";
+
 
     public static void registerCommand(Command command) {
         commands.put(command.getName(), command);
@@ -24,15 +29,17 @@ public class CommandManager {
             command.execute(args);
             return true;
         } else {
-            System.out.println("Unknown command: " + commandName);
-            return false;
+            sendMessage("Unknown command: " + commandName);
+            return true;
         }
     }
 
     public static void printHelp() {
-        System.out.println("Available commands:");
+        sendMessage("Available commands:");
         for (Command command : commands.values()) {
-            System.out.println("- " + PREFIX + command.getName() + ": " + command.getDescription());
+            sendMessage(PREFIX + command.getName() + " §7-§f " + command.getDescription());
         }
     }
+
+
 }

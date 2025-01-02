@@ -2,9 +2,9 @@ package com.Vxrtrauter.nullware;
 
 import com.Vxrtrauter.nullware.brand.BrandSpoofHandler;
 import com.Vxrtrauter.nullware.command.CommandManager;
-import com.Vxrtrauter.nullware.command.HelpCommand;
-import com.Vxrtrauter.nullware.command.ServerCommand;
-import com.Vxrtrauter.nullware.command.NullwareCommand;
+import com.Vxrtrauter.nullware.command.commands.HelpCommand;
+import com.Vxrtrauter.nullware.command.commands.ServerCommand;
+import com.Vxrtrauter.nullware.command.commands.NullwareCommand;
 import com.Vxrtrauter.nullware.command.event.ChatListener;
 import com.Vxrtrauter.nullware.gui.GuiEventHandler;
 import net.minecraftforge.common.MinecraftForge;

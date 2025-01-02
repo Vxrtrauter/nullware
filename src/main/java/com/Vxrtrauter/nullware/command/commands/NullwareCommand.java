@@ -1,4 +1,8 @@
-package com.Vxrtrauter.nullware.command;
+package com.Vxrtrauter.nullware.command.commands;
+
+import com.Vxrtrauter.nullware.command.Command;
+
+import static com.Vxrtrauter.nullware.client.MessageHandler.sendMessage;
 
 public class NullwareCommand implements Command {
 
@@ -14,6 +18,6 @@ public class NullwareCommand implements Command {
 
     @Override
     public void execute(String[] args) {
-        System.out.println("NullWare v1.0 - Created by Vxrtrauter!");
+        sendMessage("NullWare v1.0 - Created by Vxrtrauter");
     }
 }
