@@ -19,12 +19,12 @@ public class nullware {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        // Register event handlers
+        // register event handlers
         MinecraftForge.EVENT_BUS.register(new GuiEventHandler());
         MinecraftForge.EVENT_BUS.register(new BrandSpoofHandler());
         MinecraftForge.EVENT_BUS.register(new ChatListener());
 
-        // Register commands
+        // register commands for CommandManager
         CommandManager.registerCommand(new HelpCommand());
         CommandManager.registerCommand(new ServerCommand());
         CommandManager.registerCommand(new NullwareCommand());
