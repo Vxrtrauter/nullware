@@ -20,7 +20,7 @@ public class BrandSpoofHandler {
         C17PacketCustomPayload packet = new C17PacketCustomPayload("MC|Brand", pb);
         event.manager.sendPacket(packet);
 
-        // Inject our custom packet handler
+       
         ChannelPipeline pipeline = event.manager.channel().pipeline();
         pipeline.addBefore("packet_handler", "fml_packet_handler", new FMLPacketHandler());
     }
