@@ -59,13 +59,13 @@ public class GameOverlay {
         long timeSinceLastPacket = System.currentTimeMillis() - PacketListener.getLastPacketTime();
         String latestPacketText = "Last Packet: ";
         fontRenderer.drawStringWithShadow(latestPacketText, 6, 42, 0xFFFFFF);
-        fontRenderer.drawStringWithShadow("§a" + timeSinceLastPacket + " ms", 6 + fontRenderer.getStringWidth(latestPacketText), 42, 0xFFFFFF);
+        fontRenderer.drawStringWithShadow("§a" + timeSinceLastPacket + " ms§r", 6 + fontRenderer.getStringWidth(latestPacketText), 42, 0xFFFFFF);
 
         // Draw TPS
         TpsHelper.updateTps();
         String tpsText = "TPS: ";
         fontRenderer.drawStringWithShadow(tpsText, 6, 54, 0xFFFFFF);
-        fontRenderer.drawStringWithShadow(formatTps(TpsHelper.tps), 6 + fontRenderer.getStringWidth(tpsText), 54, 0xFFFFFF);
+        fontRenderer.drawStringWithShadow(formatTps(TpsHelper.tps) + "§r", 6 + fontRenderer.getStringWidth(tpsText), 54, 0xFFFFFF);
     }
 
     @SubscribeEvent(priority = EventPriority.HIGH)
@@ -100,13 +100,13 @@ public class GameOverlay {
         long lastPacketTime = System.currentTimeMillis() - PacketListener.getLastPacketTime();
 
         if (lastPacketTime < 1000L) {
-            return 0x00FF00; // Green
+            return 0x00FF00;
         } else if (lastPacketTime < 7000L) {
-            return 0xFFFF00; // Yellow
+            return 0xFFFF00;
         } else if (lastPacketTime < 15000L) {
-            return 0xFFA500; // Orange
+            return 0xFFA500;
         } else {
-            return 0xFF0000; // Red
+            return 0xFF0000;
         }
     }
 

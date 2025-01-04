@@ -7,9 +7,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.FMLNetworkEvent;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.channel.ChannelHandler;
 
 import java.lang.reflect.Field;
 
+@ChannelHandler.Sharable
 public class PacketListener extends ChannelInboundHandlerAdapter {
 
     private static Packet<?> latestPacket;
