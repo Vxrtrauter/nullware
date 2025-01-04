@@ -1,6 +1,6 @@
-package com.Vxrtrauter.nullware.gui;
+package com.Vxrtrauter.NullWare.gui;
 
-import com.Vxrtrauter.nullware.brand.BrandManager;
+import com.Vxrtrauter.NullWare.brand.BrandManager;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;

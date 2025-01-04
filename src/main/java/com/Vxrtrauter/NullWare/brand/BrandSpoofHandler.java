@@ -1,6 +1,6 @@
-package com.Vxrtrauter.nullware.brand;
+package com.Vxrtrauter.NullWare.brand;
 
-import com.Vxrtrauter.nullware.client.FMLPacketHandler;
+import com.Vxrtrauter.NullWare.client.FMLPacketHandler;
 import net.minecraftforge.fml.common.network.FMLNetworkEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import io.netty.channel.ChannelPipeline;

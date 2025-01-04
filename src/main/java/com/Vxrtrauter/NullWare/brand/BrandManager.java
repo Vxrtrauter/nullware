@@ -1,4 +1,4 @@
-package com.Vxrtrauter.nullware.brand;
+package com.Vxrtrauter.NullWare.brand;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,12 +1,3 @@
-apply plugin: 'java'
-apply plugin: 'net.minecraftforge.gradle.forge'
-
-group = 'com.Vxrtrauter.nullware'
-version = '1.0'
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
 buildscript {
     repositories {
         jcenter()
@@ -18,6 +9,23 @@ buildscript {
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
     }
+}
+
+apply plugin: 'java'
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+group = 'com.Vxrtrauter.nullware'
+version = '1.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.36'
 }
 
 minecraft {
@@ -33,6 +41,7 @@ allprojects {
         targetCompatibility = '1.8'
         options.fork = true
         options.forkOptions.executable = "${System.getenv('JAVA_HOME')}/bin/javac"
+        options.compilerArgs += ['-processor', 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor']
     }
 }
 

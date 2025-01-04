@@ -1,6 +1,6 @@
-package com.Vxrtrauter.nullware.client;
+package com.Vxrtrauter.NullWare.client;
 
-import com.Vxrtrauter.nullware.brand.BrandTransformer;
+import com.Vxrtrauter.NullWare.brand.BrandTransformer;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import java.util.Map;
 

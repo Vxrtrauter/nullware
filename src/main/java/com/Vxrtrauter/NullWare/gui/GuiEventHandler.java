@@ -1,17 +1,12 @@
-package com.Vxrtrauter.nullware.gui;
+package com.Vxrtrauter.NullWare.gui;
 
-import com.Vxrtrauter.nullware.brand.BrandManager;
-import com.Vxrtrauter.nullware.command.CommandManager;
+import com.Vxrtrauter.NullWare.brand.BrandManager;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiChat;
 import net.minecraft.client.gui.GuiMultiplayer;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.client.event.GuiScreenEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 
 public class GuiEventHandler {
     private static final Minecraft mc = Minecraft.getMinecraft();

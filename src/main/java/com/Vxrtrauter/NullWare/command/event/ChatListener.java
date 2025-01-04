@@ -1,6 +1,6 @@
-package com.Vxrtrauter.nullware.command.event;
+package com.Vxrtrauter.NullWare.command.event;
 
-import com.Vxrtrauter.nullware.command.CommandManager;
+import com.Vxrtrauter.NullWare.command.CommandManager;
 import net.minecraft.network.play.client.C01PacketChatMessage;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.FMLNetworkEvent;

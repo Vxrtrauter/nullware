@@ -1,4 +1,4 @@
-package com.Vxrtrauter.nullware.client;
+package com.Vxrtrauter.NullWare.client;
 
 import io.netty.channel.ChannelDuplexHandler;
 import io.netty.channel.ChannelHandlerContext;

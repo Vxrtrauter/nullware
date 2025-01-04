@@ -1,8 +1,8 @@
-package com.Vxrtrauter.nullware.command.commands;
+package com.Vxrtrauter.NullWare.command.commands;
 
-import com.Vxrtrauter.nullware.command.Command;
+import com.Vxrtrauter.NullWare.command.Command;
 
-import static com.Vxrtrauter.nullware.client.MessageHandler.sendMessage;
+import static com.Vxrtrauter.NullWare.client.MessageHandler.sendMessage;
 
 public class NullwareCommand implements Command {
 

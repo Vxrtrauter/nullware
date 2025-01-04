@@ -1,9 +1,9 @@
-package com.Vxrtrauter.nullware.command;
+package com.Vxrtrauter.NullWare.command;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.Vxrtrauter.nullware.client.MessageHandler.sendMessage;
+import static com.Vxrtrauter.NullWare.client.MessageHandler.sendMessage;
 
 public class CommandManager {
 
@@ -21,11 +21,13 @@ public class CommandManager {
             return false;
         }
 
-        String[] args = input.substring(PREFIX.length()).split(" ");
-        String commandName = args[0];
+        String[] parts = input.substring(PREFIX.length()).split(" ");
+        String commandName = parts[0];
         Command command = commands.get(commandName);
 
         if (command != null) {
+            String[] args = new String[parts.length - 1];
+            System.arraycopy(parts, 1, args, 0, args.length);
             command.execute(args);
             return true;
         } else {

@@ -1,4 +1,4 @@
-package com.Vxrtrauter.nullware.command;
+package com.Vxrtrauter.NullWare.command;
 
 public interface Command {
     String getName();

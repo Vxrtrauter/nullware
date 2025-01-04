@@ -1,4 +1,4 @@
-package com.Vxrtrauter.nullware.brand;
+package com.Vxrtrauter.NullWare.brand;
 
 import net.minecraft.launchwrapper.IClassTransformer;
 import org.objectweb.asm.ClassReader;
@@ -18,7 +18,7 @@ public class BrandTransformer implements IClassTransformer {
             for (MethodNode method : classNode.methods) {
                 if (method.name.equals("getClientModName") || method.name.equals("func_74298_c")) {
                     InsnList insnList = new InsnList();
-                    insnList.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/Vxrtrauter/nullware/BrandManager", "spoofBrand", "()Ljava/lang/String;", false));
+                    insnList.add(new MethodInsnNode(Opcodes.INVOKESTATIC, "com/Vxrtrauter/NullWare/BrandManager", "spoofBrand", "()Ljava/lang/String;", false));
                     insnList.add(new InsnNode(Opcodes.ARETURN));
                     method.instructions.clear();
                     method.instructions.add(insnList);

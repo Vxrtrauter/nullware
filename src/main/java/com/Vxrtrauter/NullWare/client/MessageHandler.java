@@ -1,4 +1,4 @@
-package com.Vxrtrauter.nullware.client;
+package com.Vxrtrauter.NullWare.client;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;

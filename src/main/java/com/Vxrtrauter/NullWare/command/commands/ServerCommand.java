@@ -1,10 +1,9 @@
-package com.Vxrtrauter.nullware.command.commands;
+package com.Vxrtrauter.NullWare.command.commands;
 
-import com.Vxrtrauter.nullware.command.Command;
+import com.Vxrtrauter.NullWare.command.Command;
 import net.minecraft.client.Minecraft;
-import net.minecraft.util.ChatComponentText;
 
-import static com.Vxrtrauter.nullware.client.MessageHandler.sendMessage;
+import static com.Vxrtrauter.NullWare.client.MessageHandler.sendMessage;
 
 // add functions to gather specific information from server e.g. plugins using different methods
 public class ServerCommand implements Command {
