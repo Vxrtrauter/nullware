@@ -1,4 +1,3 @@
-// `src/main/java/com/Vxrtrauter/NullWare/command/methods/OnePacketCrash.java`
 package com.Vxrtrauter.NullWare.command.commands.crashers;
 
 import com.Vxrtrauter.NullWare.command.commands.CrashHandler;
