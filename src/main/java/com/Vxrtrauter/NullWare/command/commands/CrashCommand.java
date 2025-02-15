@@ -1,4 +1,4 @@
-// `src/main/java/com/Vxrtrauter/NullWare/command/commands/CrashCommand.java`
+
 package com.Vxrtrauter.NullWare.command.commands;
 
 import com.Vxrtrauter.NullWare.command.Command;
