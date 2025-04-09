@@ -4,7 +4,7 @@ NullWare is a Minecraft Utility Mod for Forge 1.8.9.
 
 ### Features
 - Spoofing Client Brand (w/ AntiForge)
-- Crashing Servers (soon)
+- Crashing Servers (wurks but shit)
 - Gather Server Information (soon)
 
 
